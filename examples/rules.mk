@@ -25,6 +25,10 @@ Q		:= @
 NULL		:= 2>/dev/null
 endif
 
+# allow the user to add some compiler flags
+USER_FLAGS ?= 
+ARCH_FLAGS += $(USER_FLAGS)
+
 ###############################################################################
 # Executables
 
